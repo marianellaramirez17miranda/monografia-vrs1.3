@@ -1,0 +1,73 @@
+% =====================================================================
+%  MONOGRAFÍA ACADÉMICA  ·  Documento principal
+%  Compilar con:  latexmk   (o  make )
+%  Orden: Portada · Índice general · Prólogo · Introducción ·
+%         Cuerpo del trabajo · Conclusiones · Anexos · Bibliografía
+% =====================================================================
+\documentclass[12pt,a4paper,oneside]{report}
+
+% --- Datos de la portada (edite solo este archivo para personalizar) ---
+\input{config/datos}
+
+% --- Paquetes y formato ---
+\input{config/preambulo}
+
+\begin{document}
+
+% ---------------------------------------------------------------------
+%  1. PORTADA  (sin numerar)
+% ---------------------------------------------------------------------
+\input{capitulos/00_portada}
+
+% ---------------------------------------------------------------------
+%  2. ÍNDICE GENERAL  (numeración romana)
+% ---------------------------------------------------------------------
+\pagenumbering{roman}
+\setcounter{page}{1}
+\tableofcontents
+\clearpage
+
+% Índices opcionales: quite el % para activarlos
+% \listoffigures
+% \listoftables
+
+% ---------------------------------------------------------------------
+%  3. PRÓLOGO
+% ---------------------------------------------------------------------
+\input{capitulos/01_prologo}
+
+% ---------------------------------------------------------------------
+%  4. INTRODUCCIÓN  (desde aquí, numeración arábiga)
+% ---------------------------------------------------------------------
+\clearpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\input{capitulos/02_introduccion}
+
+% ---------------------------------------------------------------------
+%  5. CUERPO DEL TRABAJO
+% ---------------------------------------------------------------------
+\input{capitulos/03_capitulo1}
+\input{capitulos/04_capitulo2}
+\input{capitulos/05_capitulo3}
+
+% ---------------------------------------------------------------------
+%  6. CONCLUSIONES
+% ---------------------------------------------------------------------
+\input{capitulos/06_conclusiones}
+
+% ---------------------------------------------------------------------
+%  7. ANEXOS
+% ---------------------------------------------------------------------
+\input{capitulos/07_anexos}
+
+% ---------------------------------------------------------------------
+%  8. BIBLIOGRAFÍA
+% ---------------------------------------------------------------------
+\clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{Bibliografía}
+\bibliographystyle{bibliografia/apalike-es}
+\bibliography{bibliografia/referencias}
+
+\end{document}

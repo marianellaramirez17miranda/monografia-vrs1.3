@@ -1,0 +1,18 @@
+# Prólogo
+
+El prólogo presenta, en un tono más personal que el resto del trabajo, las
+circunstancias que dieron origen a la monografía: el interés del autor por el
+tema, el contexto académico en el que se desarrolló y la utilidad que se espera
+que tenga para el lector. Suele ocupar una o dos páginas.
+
+Este trabajo nació en el marco de un curso universitario y responde a la
+necesidad de profundizar en un tema que, por su relevancia, merece un
+tratamiento sistemático. Se ha procurado que el texto sea claro, riguroso y
+verificable, de modo que pueda servir como punto de partida para
+investigaciones posteriores.
+
+Quiero expresar mi agradecimiento al docente, por su orientación; a mis
+compañeros, por sus comentarios; y a mi familia, por su apoyo constante.
+Cualquier error u omisión que subsista es de mi exclusiva responsabilidad.
+
+*El autor*

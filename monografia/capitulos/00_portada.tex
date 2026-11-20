@@ -1,0 +1,43 @@
+% =====================================================================
+%  PORTADA
+%  Los datos se toman de config/datos.tex
+%  Para añadir el escudo/logo, guarde  figuras/logo.png  (se detecta solo)
+% =====================================================================
+\begin{titlepage}
+  \thispagestyle{empty}
+  \centering
+  \singlespacing
+
+  {\Large\bfseries \MakeUppercase{\monoUniversidad}\par}
+  \vspace{0.4cm}
+  {\large \monoFacultad\par}
+  {\large \monoEscuela\par}
+
+  \vspace{1.2cm}
+  \IfFileExists{figuras/logo.png}{%
+    \includegraphics[height=3.5cm]{figuras/logo.png}\par
+  }{}
+
+  \vspace{1.8cm}
+  {\Huge\bfseries \monoTitulo\par}
+
+  \vspace{1.2cm}
+  {\large Monografía presentada para el curso de\par}
+  {\large\textit{\monoCurso}\par}
+
+  \vfill
+
+  \begin{flushleft}
+    \hspace{5.5cm}\begin{minipage}{0.55\textwidth}
+      \raggedright
+      \textbf{Autor:}\\ \monoAutor\\ \monoCodigo\\[0.6cm]
+      \textbf{Docente:}\\ \monoDocente\\[0.6cm]
+      \textbf{Ciclo:}\\ \monoCiclo
+    \end{minipage}
+  \end{flushleft}
+
+  \vspace{1.5cm}
+  {\large \monoCiudad\par}
+  {\large \monoAnio\par}
+\end{titlepage}
+\clearpage
